@@ -542,12 +542,12 @@ public class SkyView extends View implements GestureHandler.GestureListener {
         }
     }
 
-    // Gesture handlers
+    // Gesture handlers - track outside globe double taps
+    private long lastOutsideTapTime = 0;
+    private static final long DOUBLE_TAP_TIMEOUT = 300; // ms
+
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        // Only handle touches within the globe circle
-        // Allow touches outside globe to pass through for system gestures (screenshots,
-        // etc.)
         float touchX = event.getX();
         float touchY = event.getY();
         float dx = touchX - centerX;
@@ -555,10 +555,25 @@ public class SkyView extends View implements GestureHandler.GestureListener {
         float distanceFromCenter = (float) Math.sqrt(dx * dx + dy * dy);
 
         if (distanceFromCenter <= globeRadius) {
+            // Inside globe - use normal gesture handler
             return gestureHandler.onTouchEvent(event);
         }
 
-        // Pass through touches outside the globe
+        // Outside globe - detect double-tap to restore UI
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            long currentTime = System.currentTimeMillis();
+            if (currentTime - lastOutsideTapTime < DOUBLE_TAP_TIMEOUT) {
+                // Double-tap detected outside globe - toggle UI
+                if (gestureCallbacks != null) {
+                    gestureCallbacks.onDoubleTap();
+                }
+                lastOutsideTapTime = 0; // Reset to prevent triple-tap
+                return true;
+            }
+            lastOutsideTapTime = currentTime;
+            return true;
+        }
+
         return false;
     }
 
