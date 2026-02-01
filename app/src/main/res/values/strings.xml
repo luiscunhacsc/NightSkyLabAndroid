@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NightSkyLab</string>
+    <string name="settings">Settings</string>
+    <string name="location">Location</string>
+    <string name="date_time">Date/Time</string>
+    <string name="view_direction">View</string>
+    <string name="time_speed">Speed</string>
+    <string name="constellations">Constellations</string>
+    <string name="star_names">Star Names</string>
+    <string name="use_current_location">Use Current Location</string>
+    <string name="manual_coordinates">Manual Coordinates</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="preset_locations">Preset Locations</string>
+    <string name="lisbon">Lisbon</string>
+    <string name="tokyo">Tokyo</string>
+    <string name="new_york">New York</string>
+    <string name="sydney">Sydney</string>
+    <string name="london">London</string>
+    <string name="rio">Rio de Janeiro</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="reset_time">Reset to Now</string>
+    <string name="menu">Menu</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NightSkyLab" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/terminal_green</item>
+        <item name="colorPrimaryVariant">@color/accent_cyan</item>
+        <item name="colorOnPrimary">@color/sky_black</item>
+        <item name="colorSecondary">@color/accent_cyan</item>
+        <item name="colorSecondaryVariant">@color/terminal_green</item>
+        <item name="colorOnSecondary">@color/sky_black</item>
+        <item name="android:statusBarColor">@color/sky_black</item>
+        <item name="android:navigationBarColor">@color/sky_black</item>
+        <item name="android:windowBackground">@color/void_background</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

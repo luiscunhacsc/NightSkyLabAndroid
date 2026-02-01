@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="void_background">#06060C</color>
+    <color name="sky_black">#000000</color>
+    <color name="terminal_green">#00AAAA</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="accent_cyan">#00AAFF</color>
+    <color name="warning_red">#FF5555</color>
+    <color name="panel_bg">#CC001400</color>
+    <color name="panel_border">#005500</color>
+    <color name="horizon_green">#00AA00</color>
+    <color name="grid_dark_green">#003300</color>
+</resources>
