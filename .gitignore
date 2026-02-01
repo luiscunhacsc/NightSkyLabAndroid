@@ -29,3 +29,8 @@ captures/
 .cxx/
 *.log
 *.log.*
+
+# Signing keys - NEVER commit these!
+*.jks
+*.keystore
+keystore.properties
