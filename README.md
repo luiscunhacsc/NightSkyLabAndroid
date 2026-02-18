@@ -7,7 +7,7 @@
 
 ## 🔭 Overview
 
-**NightSkyLab** is a native Android astronomy application that displays the night sky in real-time. Point your phone at the sky and see exactly what stars, planets, and constellations are above you.
+**NightSkyLab** is a native Android astronomy application that displays the night sky in real-time. See exactly what stars, planets, and constellations are above you.
 
 Explore the sky from **any location on Earth**, at **any point in time**, with intuitive touch controls.
 
